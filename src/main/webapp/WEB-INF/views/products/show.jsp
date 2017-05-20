@@ -100,7 +100,7 @@
 		</header>
 		
 		<section class="buy-options clearfix">
-			<form:form action="${shoppingCartUrl}" method="post" class="container">
+			<form:form servletRelativeAction="${shoppingCartUrl}" method="post" cssClass="container">
 				<input type="hidden" value="${product.id}" name="productId"/>
 				<ul id="variants" class="clearfix">
 					<c:forEach items="${product.prices}" var="price">
